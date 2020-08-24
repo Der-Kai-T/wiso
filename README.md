@@ -7,6 +7,9 @@ Die Dateien müssen im Unterordner img als
 
 ```
 JUH_Logo_Weiss_sRGB.png
+```
+und
+```
 Superzeichen_sRGB.png
 ```
 abgelegt werden.
