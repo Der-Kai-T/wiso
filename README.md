@@ -6,11 +6,11 @@ Es werden das Johanniter-Kreuz und das Johanniter-Logo benötigt. Diese sind int
 Die Dateien müssen im Unterordner img als 
 
 ```
-JUH_Logo_Weiss_sRGB.png
+JUH_Logo_Weiss_sRGB.png (2000 x 450px)
 ```
 und
 ```
-Superzeichen_sRGB.png
+Superzeichen_sRGB.png (150x150px)
 ```
 abgelegt werden.
 
