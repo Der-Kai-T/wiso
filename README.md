@@ -16,4 +16,4 @@ abgelegt werden.
 
 Die Grafiken ```distance.png```, ```mask.png``` und ```wash.png``` sind von fontawesome.com
 
-Derzeit ist nur das statische Display vorhanden. Der Editor für dynamischen Textwechsel inkl. Websocke-Server ist gerade in Entwicklung und folgt in den nächsten Wochen.
+Derzeit ist nur das statische Display vorhanden. Der Editor für dynamischen Textwechsel inkl. Websocket-Server ist gerade in Entwicklung und folgt in den nächsten Wochen.
