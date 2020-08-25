@@ -2,3 +2,5 @@
 display/img/JUH_Logo_Weiss_sRGB.png
 display/img/Superzeichen_sRGB.png
 display/database.php
+editor/include/db_connect.php
+editor/include/mailhandler.php
