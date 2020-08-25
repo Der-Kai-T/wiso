@@ -7,6 +7,10 @@ let distance, wash, mask;
 
 let fade, grp, dir, speed;
 
+let h1, h1_sub, h2, h2_sub;
+
+let socket;
+
 function preload(){
     logo = loadImage('img/JUH_Logo_Weiss_sRGB.png');
     superzeichen = loadImage('img/Superzeichen_sRGB.png');
@@ -18,6 +22,8 @@ function preload(){
     distance = loadImage('img/distance.png');
     wash = loadImage('img/wash.png');
     mask = loadImage('img/mask.png');
+
+
 }
 
 
@@ -28,6 +34,17 @@ function setup(){
   grp = 0;
   dir = 1;
   speed = 2;
+
+  socket = io.connect('ws://fs1.kai-thater.de:3000');
+
+  socket.on('msg', msg_received);
+}
+
+function msg_received(data){
+    h1          = data.h1;
+    h1_sub      = data.h1_sub;
+    h2          = data.h2;
+    h2_sub      = data.h2_sub;
 }
 
 function windowResized(){
@@ -70,7 +87,7 @@ function draw(){
     textFont(font_bold);
     fill(255,255,255);
     textSize(150);
-    text("Herzlich willkommen", x, y, width-x, height-y);
+    text(h1, x, y, width-x, height-y);
 
     
     x = 75;
@@ -78,7 +95,7 @@ function draw(){
     textFont(font_regular);
     fill(255,255,255);
     textSize(150);
-    text("in der Wache Osdorf", x, y, width-x, height-y);
+    text(h1_sub, x, y, width-x, height-y);
 
  pop();
 
@@ -89,14 +106,14 @@ function draw(){
     textFont(font_bold);
     fill(255,255,255);
     textSize(75);
-    text("Thema heute:", x, y, width-x, height-y);
+    text(h2, x, y, width-x, height-y);
 
     x = 75;
     y += 75;
     textFont(font_regular);
     fill(255,255,255);
     textSize(75);
-    text("Start in die neue Gruppenabend-Saison", x, y, width-x, height-y);
+    text(h2_sub, x, y, width-x, height-y);
  pop();
 
 
@@ -122,7 +139,7 @@ function draw(){
  show_distance();
 
 
- console.log("fade =" + fade + " dir=" + dir + "  grp=" + grp);
+ //console.log("fade =" + fade + " dir=" + dir + "  grp=" + grp);
  
 
 }
