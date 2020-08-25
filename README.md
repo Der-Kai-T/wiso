@@ -16,4 +16,7 @@ abgelegt werden.
 
 Die Grafiken ```distance.png```, ```mask.png``` und ```wash.png``` sind von fontawesome.com
 
-Derzeit ist nur das statische Display vorhanden. Der Editor für dynamischen Textwechsel inkl. Websocket-Server ist gerade in Entwicklung und folgt in den nächsten Wochen.
+
+
+#Editor
+Über den Bereich Editor werden zukünftig Planbar Nachrichten einstellbar sein (inkl. einer Standard-Nachricht, wenn keine Programmiert ist). Derzeit können über den Websocket-Server direkt Änderungen an alle mit dem Server verbundenen Displays gesendet werden.
